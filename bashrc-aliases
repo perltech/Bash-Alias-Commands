@@ -16,3 +16,7 @@ alias resource-bashrc='source ~/.bashrc && printf ".bashrc was sourced\n"'
 alias ll='ls -l --color=auto'
 alias la='ls -a --color=auto'
 alias lala='ls -la --color=auto'
+
+alias home='cd ~'
+alias documents='cd ~/Documents'
+alias downloads='cd ~/Downloads'
