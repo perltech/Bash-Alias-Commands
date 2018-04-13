@@ -20,3 +20,7 @@ alias lala='ls -la --color=auto'
 alias resource-bashrc='source ~/.bashrc && printf ".bashrc was sourced\n"' 
 
 alias install-log-dates='printf "\n\n***BEGIN NEW LOGS***\n\n" >> ~/Documents/installLogDates && expac --timefmt="%Y-%m-%d %T" "%l\t%n"|sort -n >> ~/Documents/installLogDates && less ~/Documents/installLogDates'
+
+alias gtball='gunzip $1; tar -xvf $1'
+alias pip3='python3 -m pip install $1'
+alias exe='chmod a+x $1'
