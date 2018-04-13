@@ -6,17 +6,17 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1="\[\033[1;37m\][\[\033[1;31m\]\u\[\033[1;37m\]@\[\033[1;32m\]\h \[\033[1;37m\]\W]\$ "
+#PS1='[\u@\h \W]\$ '
 
-
-alias install-log-dates='printf "\n\n***BEGIN NEW LOGS***\n\n" >> ~/Documents/installLogDates && expac --timefmt="%Y-%m-%d %T" "%l\t%n"|sort -n >> ~/Documents/installLogDates && less ~/Documents/installLogDates'
-
-alias resource-bashrc='source ~/.bashrc && printf ".bashrc was sourced\n"' 
+alias home='cd ~ && ls -a'
+alias documents='cd ~/Documents && ls -a'
+alias downloads='cd ~/Downloads && ls -a'
 
 alias ll='ls -l --color=auto'
 alias la='ls -a --color=auto'
 alias lala='ls -la --color=auto'
 
-alias home='cd ~ && ls -a'
-alias documents='cd ~/Documents && ls -a'
-alias downloads='cd ~/Downloads && ls -a'
+alias resource-bashrc='source ~/.bashrc && printf ".bashrc was sourced\n"' 
+
+alias install-log-dates='printf "\n\n***BEGIN NEW LOGS***\n\n" >> ~/Documents/installLogDates && expac --timefmt="%Y-%m-%d %T" "%l\t%n"|sort -n >> ~/Documents/installLogDates && less ~/Documents/installLogDates'
