@@ -24,3 +24,9 @@ alias install-log-dates='printf "\n\n***BEGIN NEW LOGS***\n\n" >> ~/Documents/in
 alias gtball='gunzip $1; tar -xvf $1'
 alias pip3='python3 -m pip install $1'
 alias exe='chmod a+x $1'
+
+# use GTK+ to create a darkmode switching theme for the file manager
+
+alias wisdom='fortune | cowsay | lolcat'
+
+alias view-pics='feh -g 640x480 -d -S filename  ~/Pictures/'
